@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple calc</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class=container> 
+        <section class="header">
+            <h3>Ex900 ms~calc</h3>
+            <input type="text" id="display">
+        </section>
+
+        <section class="buttons">
+            <button onclick="getNumber(1)">1</button>
+            <button onclick="getNumber(2)">2</button>
+            <button onclick="getNumber(3)">3</button>
+            <button onclick="getOperator('+')">+</button>
+            <button onclick="getNumber(4)">4</button>
+            <button onclick="getNumber(5)">5</button>
+            <button onclick="getNumber(6)">6</button>
+            <button onclick="getOperator('-')">-</button>
+            <button onclick="getNumber(7)">7</button>
+            <button onclick="getNumber(8)">8</button>
+            <button onclick="getNumber(9)">9</button>
+            <button onclick="getOperator('*')">*</button>
+            <button class="cd" onclick="clearDisplay('cd')">CD</button>
+            <button onclick="getNumber(0)">0</button>
+            <button onclick="getNumber('.')">.</button>
+            <button onclick="getOperator('/')">/</button>
+            <button class="equal-button" onclick="calculateEquals('=')" onkeydown="enterCalculatesEqual()">=</button>
+        </section>
+    </div>
+    <script src="index.js">
+
+    </script>
+</body>
+</html>
